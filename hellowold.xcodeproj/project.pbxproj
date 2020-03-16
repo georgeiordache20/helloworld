@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4F2711CE305E507BBDABFF /* Pods_hellowold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B777F39E5D08FB29FA72D6B /* Pods_hellowold.framework */; };
 		CE4BAA8D241FB65000C541EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BAA8C241FB65000C541EF /* AppDelegate.swift */; };
 		CE4BAA8F241FB65000C541EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BAA8E241FB65000C541EF /* SceneDelegate.swift */; };
 		CE4BAA91241FB65000C541EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BAA90241FB65000C541EF /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B777F39E5D08FB29FA72D6B /* Pods_hellowold.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hellowold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9897A913B6F8153692B9F2E6 /* Pods-hellowold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellowold.debug.xcconfig"; path = "Target Support Files/Pods-hellowold/Pods-hellowold.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4BAA89241FB65000C541EF /* hellowold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hellowold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4BAA8C241FB65000C541EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4BAA8E241FB65000C541EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CE4BAA95241FB65200C541EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4BAA98241FB65200C541EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4BAA9A241FB65200C541EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABB243239C944D26052A76A /* Pods-hellowold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hellowold.release.xcconfig"; path = "Target Support Files/Pods-hellowold/Pods-hellowold.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4F2711CE305E507BBDABFF /* Pods_hellowold.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E34FAEC8DBD6418E8B6C16B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B777F39E5D08FB29FA72D6B /* Pods_hellowold.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE4BAA80241FB65000C541EF = {
 			isa = PBXGroup;
 			children = (
 				CE4BAA8B241FB65000C541EF /* hellowold */,
 				CE4BAA8A241FB65000C541EF /* Products */,
+				F92AA65F40BE8D3DAD8C9735 /* Pods */,
+				5E34FAEC8DBD6418E8B6C16B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = hellowold;
 			sourceTree = "<group>";
 		};
+		F92AA65F40BE8D3DAD8C9735 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9897A913B6F8153692B9F2E6 /* Pods-hellowold.debug.xcconfig */,
+				EABB243239C944D26052A76A /* Pods-hellowold.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4BAA9D241FB65200C541EF /* Build configuration list for PBXNativeTarget "hellowold" */;
 			buildPhases = (
+				B41670268C97B878DB49A869 /* [CP] Check Pods Manifest.lock */,
 				CE4BAA85241FB65000C541EF /* Sources */,
 				CE4BAA86241FB65000C541EF /* Frameworks */,
 				CE4BAA87241FB65000C541EF /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B41670268C97B878DB49A869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hellowold-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE4BAA85241FB65000C541EF /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		CE4BAA9E241FB65200C541EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9897A913B6F8153692B9F2E6 /* Pods-hellowold.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +351,7 @@
 		};
 		CE4BAA9F241FB65200C541EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EABB243239C944D26052A76A /* Pods-hellowold.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
